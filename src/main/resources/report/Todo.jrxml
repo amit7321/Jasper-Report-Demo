@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Todo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5220d696-4779-4ca9-bbf4-55ac69872e27">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Jasper Report Demo"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="plsql">
+		<![CDATA[select * from todo]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="todo"/>
+	</field>
+	<field name="details" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="details"/>
+		<property name="com.jaspersoft.studio.field.label" value="details"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="todo"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="todo"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="114" splitType="Stretch">
+			<staticText>
+				<reportElement x="232" y="27" width="100" height="30" uuid="4d339310-c6dd-4227-9e6a-4e54a580e021"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Todo]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="37" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<line>
+				<reportElement x="0" y="-1" width="555" height="1" uuid="da722591-7b0c-4c34-8cf0-d850d100fa49"/>
+			</line>
+			<line>
+				<reportElement x="0" y="27" width="555" height="1" uuid="ce4bbdb6-9bd6-4591-ab55-7d4a44111398">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="29" uuid="23a1fc5f-2f12-40ff-8480-15ddc951423a"/>
+			</line>
+			<line>
+				<reportElement x="80" y="0" width="1" height="29" uuid="8ce85f35-74d2-449a-a1db-7acf392e6495"/>
+			</line>
+			<line>
+				<reportElement x="555" y="0" width="1" height="29" uuid="f8be0295-1dbf-4992-86a6-96d3cd870b6e"/>
+			</line>
+			<line>
+				<reportElement x="217" y="0" width="1" height="29" uuid="9a3f8b30-779d-44f9-9064-ae781efd205e"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="-2" width="79" height="30" uuid="4703664a-a34a-43a6-9222-ca74302a52ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="1" width="137" height="26" uuid="44268c16-66d7-4f52-a574-605517845e9a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="335" height="26" uuid="810e298b-614e-4b4c-a739-14be960c1c23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<textField>
+				<reportElement x="1" y="1" width="80" height="24" uuid="9cc4fb99-3c35-48e6-88e0-9d74858081b7"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="555" y="0" width="1" height="25" uuid="68741dd0-fd33-458c-8521-c7e90a7685ee"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-4" width="1" height="28" uuid="520a072b-c78e-49ff-b2b4-9b8bc4d215db"/>
+			</line>
+			<line>
+				<reportElement x="0" y="24" width="555" height="1" uuid="b9ba9fb1-cabe-4549-a30b-3d803ee3f37a">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="217" y="-4" width="1" height="28" uuid="ef16aec4-0c98-4a28-a51c-74398b8fc0c0"/>
+			</line>
+			<line>
+				<reportElement x="80" y="-4" width="1" height="28" uuid="339921c9-d6f5-4023-97e4-aa54c50dce65"/>
+			</line>
+			<textField>
+				<reportElement x="217" y="1" width="339" height="24" uuid="c2f8dbd5-2172-4fb1-a110-d81bbb8b6369"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{details}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="-1" width="136" height="25" uuid="ca15629a-34d6-4817-8a0e-5844110e6309"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="25" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="29" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="24" splitType="Stretch"/>
+	</summary>
+</jasperReport>
